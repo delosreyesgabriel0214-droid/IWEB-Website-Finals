@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Downtown Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">Welcome to Downtown Gallery — Free shipping over ₱999!</div>
+    <div class="navbar">
+      <div class="brand"><a href="#" class="home-link">DOWNTOWN GALLERY</a></div>
+      <nav class="main-nav">
+        <a href="#category-shirts">Shirts</a>
+        <a href="#category-hoodies">Hoodies</a>
+        <a href="#category-pants">Pants</a>
+        <a href="#category-shorts">Shorts</a>
+        <a href="#about">About us</a>
+      </nav>
+      <button id="open-cart" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <!--Cart Modal -->
+  <div id="cart-modal" class="cart-modal hidden">
+    <div class="cart-panel">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="close-cart" class="close-btn">✕</button>
+      </div>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <div>Total: <strong id="cart-total">₱0.00</strong></div>
+        <div class="cart-actions">
+          <button id="checkout-btn" class="btn primary">Checkout</button>
+          <button id="clear-cart" class="btn">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Downtown Gallery  || Belinario, Kurt Sean P. || Delos Reyes, Gabriel ?. || NW - 201
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
